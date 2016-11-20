@@ -33,7 +33,7 @@
   mysql_db:
     name: {{ owncloud_database_db }}
     encoding: 'UTF-8'
-    state=present
+    state: present
 
 - name: Create ownCloud mysql database user
   mysql_user:
