@@ -1,7 +1,7 @@
 ---
 - name: Add ownCloud repo key
   apt_key:
-    url='https://download.owncloud.org/download/repositories/stable/{{ ansible_distribution }}_{{ ansible_distribution_version }}/Release.key'
+    url='https://download.owncloud.org/download/repositories/stable/{{ ansible_distribution }}_8.0/Release.key'
     state=present
 
 - name: Add ownCloud repo
