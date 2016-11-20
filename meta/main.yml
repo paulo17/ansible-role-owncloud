@@ -1,9 +1,8 @@
 ---
 dependencies:
-  - { role: kbrebanov.postgresql }
 
 galaxy_info:
-  author: tkanemoto
+  author: paulboiseau
   description: ownCloud
   license: "license (BSD, MIT)"
   min_ansible_version: 1.9
