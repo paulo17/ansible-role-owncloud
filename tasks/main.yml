@@ -21,11 +21,13 @@
      - php-smb
      - php-smbclient
      - smbclient
-  notify: restart apache
+  notify:
+    - nginx restart
 
 - name: Install ownCloud
   apt: name=owncloud state=present force=yes
-  notify: restart apache
+  notify:
+    - nginx restart
 
 - name: Create ownCloud mysql database
   mysql_db:
