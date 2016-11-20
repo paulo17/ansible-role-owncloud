@@ -23,7 +23,6 @@
      - php-xmlwriter
      - php-json
      - php-posix
-     - php-zlib
      - php-iconv
      - php-pdo-mysql
   notify:
