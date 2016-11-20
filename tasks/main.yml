@@ -6,7 +6,7 @@
 
 - name: Add ownCloud repo
   apt_repository:
-    repo='deb http://download.owncloud.org/download/repositories/stable/{{ ansible_distribution }}_{{ ansible_distribution_version }}/ /'
+    repo='deb http://download.owncloud.org/download/repositories/stable/{{ ansible_distribution }}_8.0/ /'
     state=present
     update_cache=yes
 
