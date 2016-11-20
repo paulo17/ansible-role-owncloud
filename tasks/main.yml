@@ -14,13 +14,18 @@
   apt: pkg={{ item }} state=present
   with_items:
      - php-zip
-     - php-pgsql
      - php-xml
      - php-gd
+     - php-ctype
      - php-curl
-     - php-smb
-     - php-smbclient
-     - smbclient
+     - php-dom
+     - php-simplexml
+     - php-xmlwriter
+     - php-JSON
+     - php-posix
+     - php-zlib
+     - php-iconv
+     - php-pdo-mysql
   notify:
     - nginx restart
 
