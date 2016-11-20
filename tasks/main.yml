@@ -21,7 +21,7 @@
      - php-dom
      - php-simplexml
      - php-xmlwriter
-     - php-JSON
+     - php-json
      - php-posix
      - php-zlib
      - php-iconv
