@@ -40,7 +40,7 @@
 - name: Create ownCloud mysql database
   mysql_db:
     name: "{{ owncloud_database_db }}"
-    encoding: "UTF-8"
+    encoding: "utf8"
     login_password: "{{ owncloud_database_root_password }}"
     state: present
 
