@@ -11,7 +11,8 @@
     update_cache=yes
 
 - name: Install dependencies
-  apt: pkg={{ item }} state=present
+  apt: pkg={{ item }}
+  state: present
   with_items:
      - php-zip
      - php-xml
@@ -36,6 +37,7 @@
 - name: databases > Install python-mysqldb package
   apt:
     name: python-mysqldb
+    state: present
 
 - name: Create ownCloud mysql database
   mysql_db:
@@ -47,7 +49,6 @@
 - name: Create ownCloud mysql database user
   mysql_user:
     name: "{{ owncloud_database_username }}"
-    db: "{{ owncloud_database_db }}"
     password: "{{ owncloud_database_password }}"
     login_password: "{{ owncloud_database_root_password }}"
     priv: ALL
