@@ -11,8 +11,7 @@
     update_cache=yes
 
 - name: Install dependencies
-  apt: pkg={{ item }}
-  state: present
+  apt: pkg={{ item }} state=present
   with_items:
      - php-zip
      - php-xml
