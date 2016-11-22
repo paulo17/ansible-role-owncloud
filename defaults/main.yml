@@ -2,3 +2,4 @@
 owncloud_database_db: owncloud
 owncloud_database_username: owncloud
 owncloud_database_password: s3cr1t
+owncloud_database_root_password: password

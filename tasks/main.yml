@@ -41,6 +41,7 @@
   mysql_db:
     name: "{{ owncloud_database_db }}"
     encoding: "UTF-8"
+    login_password: "{{ owncloud_database_root_password }}"
     state: present
 
 - name: Create ownCloud mysql database user
@@ -48,5 +49,6 @@
     name: "{{ owncloud_database_username }}"
     db: "{{ owncloud_database_db }}"
     password: "{{ owncloud_database_password }}"
+    login_password: "{{ owncloud_database_root_password }}"
     priv: ALL
     state: present
