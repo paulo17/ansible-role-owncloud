@@ -33,6 +33,10 @@
   notify:
     - nginx restart
 
+- name: databases > Install python-mysqldb package
+  apt:
+    name: python-mysqldb
+
 - name: Create ownCloud mysql database
   mysql_db:
     name: "{{ owncloud_database_db }}"
