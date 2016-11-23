@@ -50,5 +50,5 @@
     name: "{{ owncloud_database_username }}"
     password: "{{ owncloud_database_password }}"
     login_password: "{{ owncloud_database_root_password }}"
-    priv: ALL
+    priv: "{{ owncloud_database_db }}.*:ALL"
     state: present
