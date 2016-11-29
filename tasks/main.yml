@@ -25,6 +25,7 @@
      - php-posix
      - php-iconv
      - php-pdo-mysql
+     - php-mbstring
   notify:
     - nginx restart
 
