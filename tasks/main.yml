@@ -53,3 +53,6 @@
     login_password: "{{ owncloud_database_root_password }}"
     priv: "{{ owncloud_database_db }}.*:ALL"
     state: present
+
+- name: Add owncloud configuration file
+  template: src="config.php.j2" dest="/var/www/owncloud/config/"
