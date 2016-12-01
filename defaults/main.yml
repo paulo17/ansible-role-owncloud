@@ -1,4 +1,5 @@
 ---
+owncloud_version: 9.1.2.5
 owncloud_database_db: owncloud
 owncloud_database_username: owncloud
 owncloud_database_password: s3cr1t

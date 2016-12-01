@@ -1,8 +1,9 @@
 <?php
 $CONFIG = array (
-  'instanceid' => 'oce41b2c1323',
-  'passwordsalt' => '23307351a41a7af36a40064491fc66',
-  'secret' => '2edf18e9dea480675c32dacd74e632c1f8434842f8fb339ef9e09eff6512c3ca01810460c88b134d738532adf39e4dca',
+  'updatechecker' => false,
+  'instanceid' => 'ocg7xh3fd166',
+  'passwordsalt' => 'BTNNtnR4HcjLY9b9OgZ706vbISPikA',
+  'secret' => 'lNOpFNAGaXdZNYlz8MB+bvjGvIUFh65QAIFwbkfekdNhBLag',
   'trusted_domains' =>
   array (
     0 => '{{ owncloud_http_domain }}',
@@ -10,18 +11,12 @@ $CONFIG = array (
   'datadirectory' => '/var/www/owncloud/data',
   'overwrite.cli.url' => '{{ owncloud_http_domain }}',
   'dbtype' => 'mysql',
-  'dbname' => {{ owncloud_database_db }},
+  'version' => '{{ owncloud_version }}',
+  'dbname' => '{{ owncloud_database_db }}',
   'dbhost' => 'localhost',
   'dbtableprefix' => 'oc_',
-  'dbuser' => {{ owncloud_database_username }},
-  'dbpassword' => {{ owncloud_database_password }},
+  'dbuser' => '{{ owncloud_database_username}}',
+  'dbpassword' => '{{ owncloud_database_password }}',
+  'logtimezone' => 'UTC',
   'installed' => true,
-  'theme' => '',
-  'maintenance' => false,
-  'mail_from_address' => 'paulboiseau',
-  'mail_smtpmode' => 'php',
-  'mail_domain' => 'gmail.com',
-  'forcessl' => false,
-  'forceSSLforSubdomains' => false,
-  'loglevel' => 0,
 );
