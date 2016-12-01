@@ -1,6 +1,6 @@
 # Ansible Role: ownCloud
 
-Installs ownCloud for Debian/Ubuntu linux machines. Uses PostgreSQL.
+Installs ownCloud for Debian 8 and Mysql
 
 ## Requirements
 
@@ -22,16 +22,16 @@ The database user name.
 
 The database password.
 
+    owncloud_http_domain: cloud.yourdomain.com
+
+The owncloud http domain.
+
 ## Example Playbook (using default config)
 
-    - hosts: webservers
+    - hosts: owncloud
       roles:
-        - tkanemoto.owncloud
+        - paulboiseau.owncloud
 
 ## License
 
 MIT / BSD
-
-## Author Information
-
-This role was created in 2016 by [Takeshi Kanemoto](https://tkanemoto.com/).
