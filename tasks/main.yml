@@ -65,6 +65,7 @@
 - name: Create download directory for torrent downloaded files
   file:
     path: /var/www/owncloud/data/owncloud/files/download
+    state: directory
     owner: www-data
     group: www-data
     mode: 0775
