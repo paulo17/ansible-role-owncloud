@@ -61,3 +61,10 @@
     force: yes
     mode: '0640'
     validate: 'php -f %s'
+
+- name: Create download directory for torrent downloaded files
+  file:
+    path: /var/www/owncloud/data/owncloud/files/download
+    owner: www-data
+    group: www-data
+    mode: 0775
